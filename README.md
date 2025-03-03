@@ -3,6 +3,7 @@
 [![PyPI version](https://img.shields.io/pypi/v/mcp-server-memos.svg)](https://pypi.org/project/mcp-server-memos/)
 [![Python Version](https://img.shields.io/pypi/pyversions/mcp-server-memos.svg)](https://pypi.org/project/mcp-server-memos/)
 [![License](https://img.shields.io/github/license/RyoJerryYu/mcp-server-memos-py.svg)](https://github.com/RyoJerryYu/mcp-server-memos-py/blob/master/LICENSE)
+[![smithery badge](https://smithery.ai/badge/@RyoJerryYu/mcp-server-memos-py)](https://smithery.ai/server/@RyoJerryYu/mcp-server-memos-py)
 
 A Python package that provides LLM models with the ability to interact with [Memos](https://github.com/usememos/memos) server through the [MCP (Model Context Protocol)](https://modelcontextprotocol.io/introduction) interface.
 
@@ -48,6 +49,15 @@ You can include this package in your config file as bellow, just as you use othe
 
 ### 📦 Installation
 
+#### Installing via Smithery
+
+To install mcp-server-memos-py for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@RyoJerryYu/mcp-server-memos-py):
+
+```bash
+npx -y @smithery/cli install @RyoJerryYu/mcp-server-memos-py --client claude
+```
+
+#### Installing Manually
 ```bash
 pip install mcp-server-memos
 ```
