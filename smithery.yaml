@@ -1,0 +1,40 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - host
+      - port
+      - token
+    properties:
+      host:
+        type: string
+        default: localhost
+        description: Memos server hostname
+      port:
+        type: number
+        default: 8080
+        description: Memos server port
+      token:
+        type: string
+        default: ""
+        description: Access token for authentication
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({
+      command: 'mcp-server-memos',
+      args: [
+        '--host', config.host,
+        '--port', String(config.port),
+        '--token', config.token
+      ],
+      env: {}
+    })
+  exampleConfig:
+    host: localhost
+    port: 5230
+    token: your-access-token-here
