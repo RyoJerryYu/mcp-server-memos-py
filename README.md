@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/ryojerryyu-mcp-server-memos-py-badge.png)](https://mseep.ai/app/ryojerryyu-mcp-server-memos-py)
+
 # MCP Server Memos 📝
 
 [![PyPI version](https://img.shields.io/pypi/v/mcp-server-memos.svg)](https://pypi.org/project/mcp-server-memos/)
